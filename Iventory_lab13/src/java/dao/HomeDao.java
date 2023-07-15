@@ -27,6 +27,10 @@ public class HomeDao {
             Statement statement = null;
             ResultSet resultSet = null;
             String searchingDB = "";
+            int itemidDB = "";
+            
+            
+            
            
             
             
@@ -35,15 +39,18 @@ public class HomeDao {
             try {
                 con = DBConnection.createConnection();
                 statement = con.createStatement();
-                resultSet = statement.executeQuery("select ibid from ITEM_BRANCH");
+                resultSet = statement.executeQuery("select ItemID, BranchID , DateTime , Status  from ITEM_BRANCH where ibid='"+searching+"'");
             while (resultSet.next()) {
-                searchingDB = resultSet.getString("ibid");
+                usernameDB = resultSet.getString("username");
+                passwordDB = resultSet.getString("password");
+                
+                if (username.equals(usernameDB)&& password.equals(passwordDB)) {
+                    return "SUCCESS";
+                }   
               
                 
-                if (searching.equals(searchingDB)) {
-                    return "SUCCESS";
-                }
-            }
+                
+               
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
