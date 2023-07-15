@@ -11,21 +11,21 @@ package bean;
  */
 public class HomeBean implements java.io.Serializable  {
     
-    public String search;
+    public String searching;
 
     public HomeBean() {
     }
 
-    public HomeBean(String search) {
-        this.search = search;
+    public HomeBean(String searching) {
+        this.searching = searching;
     }
 
-    public String getSearch() {
-        return search;
+    public String getSearching() {
+        return searching;
     }
 
-    public void setSearch(String search) {
-        this.search = search;
+    public void setSearching(String searching) {
+        this.searching = searching;
     }
     
     
