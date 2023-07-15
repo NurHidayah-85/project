@@ -37,7 +37,7 @@ table, td, th {
            
         </table>
     <center>
-         <form action="HomeServlet" method="POST">
+         <form action="HomeServlet.jsp" method="POST">
              <table border="0" style ="text-align:center" width = "100%">
                  <tr><td>YOUR PARCEL ID : <input type="text" name="shipid" value="---Enter here---" /></td></tr>
                  <tr><td><input type="submit" value="Check" name="check" /></td></tr>
