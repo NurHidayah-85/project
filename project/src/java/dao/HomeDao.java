@@ -40,24 +40,15 @@ public class HomeDao {
                     ResultSet branchRs = statementBranch.executeQuery("SELECT * FROM BRANCH WHERE BRANCHID=" + rs.getInt("BRANCHID"));
 
                     if (branchRs.next()) {
-                        int ibid = rs.getInt("IBID");
-                        Timestamp datetime = rs.getDateTime();
-                        String status = rs.getString("STATUS");
-                        int itemid = rs.getInt("ITEMID");
-                        int branchid = branchRs.getInt("BRANCHID");
-                        String location = branchRs.getString("LOCATION");
-                        String poscode = branchRs.getString("POSCODE");
-                        int vehicleid = rs.getInt("VEHICLEID");
-
                         itemBranches.add(new ItemBranchBean(
                                 rs.getInt("IBID"),
-                                 rs.getTimestamp("DATETIME"),
-                                 rs.getString("STATUS"),
-                                 rs.getInt("ITEMID"),
-                                 new BranchBean(branchRs.getInt("BRANCHID"),
-                                         branchRs.getString("LOCATION"),
-                                         branchRs.getString("POSCODE")),
-                                 rs.getInt("VEHICLEID")
+                                rs.getTimestamp("DATETIME"),
+                                rs.getString("STATUS"),
+                                rs.getInt("ITEMID"),
+                                new BranchBean(branchRs.getInt("BRANCHID"),
+                                        branchRs.getString("LOCATION"),
+                                        branchRs.getInt("POSCODE")),
+                                rs.getInt("VEHICLE")
                         ));
                     }
                 } catch (SQLException ex) {

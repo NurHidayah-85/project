@@ -10,13 +10,21 @@ package bean;
  * @author frei-
  */
 public class BranchBean {
+
     private int branchId;
     private String location;
     private int poscode;
 
-    public BranchBean() {}
+    public BranchBean() {
+    }
 
     public BranchBean(String location, int poscode) {
+        this.location = location;
+        this.poscode = poscode;
+    }
+
+    public BranchBean(int branchId, String location, int poscode) {
+        this.branchId = branchId;
         this.location = location;
         this.poscode = poscode;
     }
@@ -44,8 +52,5 @@ public class BranchBean {
     public void setPoscode(int poscode) {
         this.poscode = poscode;
     }
-    
-    
-    
-    
+
 }
