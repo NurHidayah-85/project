@@ -24,9 +24,8 @@ public class RegisterBranchDao {
         try {
             con = DBConnection.createConnection();
             statement = con.createStatement();
-            int result = statement.executeUpdate("insert into BRANCH (BRANCHID, LOCATION, POSCODE) "
-                    + "VALUES ('" + addbranchBean.getBranchId() + "', '"
-                    + addbranchBean.getLocation() + "', "
+            int result = statement.executeUpdate("insert into BRANCH (LOCATION, POSCODE) "
+                    + "VALUES ('" + addbranchBean.getLocation() + "', "
                     + addbranchBean.getPoscode() +  "')");
 
             return true;
