@@ -2,3 +2,52 @@ create table VEHICLE (
 vehicleid int primary key generated always as identity,
 vehicletype varchar(50),
 noplate int);
+
+create table BRANCH (
+branchid int primary key generated always as identity,
+location varchar(50),
+poscode int);
+
+create table STAFF (
+staffid int primary key generated always as identity,
+staffname varchar(50),
+staffposition varchar(50),
+staffphone int,
+staffadd varchar(50),
+staffemail varchar(50),
+password varchar(10),
+username varchar(50));
+
+create table CUSTOMERRECEIVE (
+custid int primary key generated always as identity,
+custname varchar(50),
+custphone int,
+custadd varchar(50),
+custposcode int,
+custemail varchar(50));
+
+create table CUSTOMERSENDER (
+custid int primary key generated always as identity,
+custname varchar(50),
+custphone int,
+custadd varchar(50),
+custposcode int,
+custemail varchar(50));
+
+create table ITEM (
+itemid int primary key generated always as identity,
+weight double,
+height double,
+fee int,
+shiptype varchar(50),
+staffid int,
+custrid int,
+custsid int);
+
+create table ITEM_BRANCH(
+ibid int primary key generated always as identity,
+itemid int,
+branchid int,
+datetime Timestamp,
+status varchar(50),
+vehicle int);

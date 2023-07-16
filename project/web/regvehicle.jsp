@@ -20,7 +20,7 @@
                 
                     <tr>
                         <td>Vehicle Type: </td>
-                        <td><select name="vehicletype" id="vehicle">
+                        <td><select name="vehicletype">
                             <option value="van">Van</option>
                             <option value="lorry">Lorry</option>
                             <option value="car">Car</option>
