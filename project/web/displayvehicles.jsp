@@ -19,19 +19,19 @@
 
             <tr><th>Id</th><th>Type</th><th>No.Plate</th></tr>
 
-            <% for (VehicleBean branch : vehicles) {
+            <% for (VehicleBean vehicle : vehicles) {
             %>
             <tr>
-                <td><%= branch.getVehicleid()%></td>
-                <td><%= branch.getVehicletype() %></td>
-                <td><%= branch.getNoplate() %></td>
+                <td><%= vehicle.getVehicleid()%></td>
+                <td><%= vehicle.getVehicletype() %></td>
+                <td><%= vehicle.getNoplate() %></td>
                 <td>
-                    <form action="DeleteBranchServlet" method="DELETE">
-                        <input type="hidden" name="branchId" value="<%= branch.getVehicleid() %>">
+                    <form action="DeleteVehicleServlet" method="DELETE">
+                        <input type="hidden" name="vehicleid" value="<%= vehicle.getVehicleid() %>">
                         <input type="submit" value="delete">
                     </form>
-                    <form action="EditBranchServlet" method="GET">
-                        <input type="hidden" name="branchId" value="<%= branch.getVehicleid() %>">
+                    <form action="EditVehicleServlet" method="GET">
+                        <input type="hidden" name="vehicleid" value="<%= vehicle.getVehicleid() %>">
                         <input type="submit" value="edit">
                     </form>
                 </td>

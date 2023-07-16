@@ -35,7 +35,7 @@
                     </tr>
                     <tr>
                         <td>No.Plate</td>
-                        <td><input type="text" name="noplate" value="<%= vehicle.getNoplate()%>" /></td>
+                        <td><input type="number" name="noplate" value="<%= vehicle.getNoplate()%>" /></td>
                     </tr>
                     <tr>
                         <td></td>

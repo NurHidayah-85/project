@@ -5,7 +5,7 @@
  */
 package controller;
 
-import bean.ItemBranchBean;
+
 import dao.VehicleDao;
 import java.io.IOException;
 import java.io.PrintWriter;

@@ -7,7 +7,7 @@ package bean;
 
 /**
  *
- * @author frei-
+ * @author 
  */
 public class BranchBean {
 

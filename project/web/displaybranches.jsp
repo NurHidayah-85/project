@@ -13,9 +13,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Branches Overview</title>
     </head>
+    <center>
     <body>
         <table border="1" style ="text-align:center" width = "100%">
-
+        <p> <h1>Branches List</h1></p>
             <tr><th>Id</th><th>Location</th><th>Poscode</th><th>Actions</th></tr>
 
             <% for (BranchBean branch : branches) {
@@ -40,4 +41,5 @@
             %>
         </table>
     </body>
+    </center>
 </html>
