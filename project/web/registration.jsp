@@ -15,6 +15,12 @@
         <h1>User Registration</h1>
         <form action="RegisterServlet" method="POST">
             <table>
+                <tr>
+                        <td><li>Staff ID</li></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="staffId" placeholder="Enter your ID" /></td>
+                    </tr>
                     <tr>
                         <td><li>Name</li></td>
                     </tr>
