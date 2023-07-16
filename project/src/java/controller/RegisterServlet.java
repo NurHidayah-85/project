@@ -40,7 +40,7 @@ public class RegisterServlet extends HttpServlet {
         
         if (password != null && cpassword != null &&
                 password.equals(cpassword)) {
-            int staffId = Integer.parseInt(request.getParameter("staffId"));
+           
             String fullname = request.getParameter("fullname");
             String position = request.getParameter("position");
             int phone = Integer.parseInt(request.getParameter("phone"));
@@ -48,7 +48,7 @@ public class RegisterServlet extends HttpServlet {
             String email = request.getParameter("email");
             String username = request.getParameter("username");
 
-            StaffBean registerBean = new StaffBean(staffId, fullname, position, phone, address, email, password, username, cpassword);
+            StaffBean registerBean = new StaffBean(fullname, position, phone, address, email, password, username, cpassword);
 
             if (RegisterDao.registerUser(registerBean)) {
                 request.getRequestDispatcher("/login.jsp").forward(request, response);
