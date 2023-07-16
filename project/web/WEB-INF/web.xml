@@ -28,6 +28,10 @@
         <servlet-name>AddTrackingStatusServlet</servlet-name>
         <servlet-class>controller.AddTrackingStatusServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DeleteBranchServlet</servlet-name>
+        <servlet-class>controller.DeleteBranchServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
@@ -55,6 +59,10 @@
     <servlet-mapping>
         <servlet-name>AddTrackingStatusServlet</servlet-name>
         <url-pattern>/AddTrackingStatusServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteBranchServlet</servlet-name>
+        <url-pattern>/DeleteBranchServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

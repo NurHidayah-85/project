@@ -3,12 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/web/trackingstatus.jsp</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/web/regvehicle.jsp</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/bean/TrackingStatusBean.java</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/controller/AddTrackingStatusServlet.java</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/web/regbranch.jsp</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/dao/AddTrackingStatus.java</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/web/home.jsp</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/dao/HomeDao.java</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/controller/HomeServlet.java</file>
         </group>
     </open-files>
 </project-private>
