@@ -24,7 +24,7 @@ public class RegisterDao {
         try {
             con = DBConnection.createConnection();
             statement = con.createStatement();
-            int result = statement.executeUpdate("insert into STAFF (STAFFNAME, STAFFPOSITION, STAFFPHONE, STAFFADD, STAFFEMAIL, PASSWORD, USERNAME) "
+            int result = statement.executeUpdate("insert into STAFF ( STAFFNAME, STAFFPOSITION, STAFFPHONE, STAFFADD, STAFFEMAIL, PASSWORD, USERNAME) "
                     + "VALUES ('" + registerBean.getFullname() + "', '"
                     + registerBean.getPosition() + "', "
                     + registerBean.getPhone() + ", '"
