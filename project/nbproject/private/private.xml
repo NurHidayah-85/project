@@ -2,18 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/dao/HomeDao.java</file>
-            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/dao/LoginDao.java</file>
-            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/util/DBConnection.java</file>
-            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/bean/BranchBean.java</file>
-            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/conf/MANIFEST.MF</file>
-            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/web/registration.jsp</file>
-            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/bean/ItemBranchBean.java</file>
-            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/controller/RegisterServlet.java</file>
-            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/controller/HomeServlet.java</file>
-            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/bean/StaffBean.java</file>
-            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/web/home.jsp</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

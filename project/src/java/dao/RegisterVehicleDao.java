@@ -15,7 +15,7 @@ import util.DBConnection;
  *
  * @author LENOVO
  */
-public class AddVehicleDao {
+public class RegisterVehicleDao {
     
   public static boolean addvehicle(VehicleBean addvehicleBean) {
 

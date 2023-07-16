@@ -6,7 +6,7 @@
 package controller;
 
 import bean.VehicleBean;
-import dao.AddVehicleDao;
+import dao.RegisterVehicleDao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -39,7 +39,7 @@ public class AddVehicleServlet extends HttpServlet {
             
             VehicleBean addvehicleBean = new VehicleBean(vehicletype, noplate);
 
-            if (AddVehicleDao.addvehicle(addvehicleBean)) {
+            if (RegisterVehicleDao.addvehicle(addvehicleBean)) {
                 request.getRequestDispatcher("/dashboard.jsp").forward(request, response);
                 return;
             }
