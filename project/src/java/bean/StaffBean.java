@@ -11,7 +11,7 @@ package bean;
  */
 public class StaffBean implements java.io.Serializable {
     
-    private long staffId;
+    private int staffId;
     private String fullname;
     private String position;
     private int phone;
@@ -24,7 +24,8 @@ public class StaffBean implements java.io.Serializable {
     public StaffBean() {
     }
 
-    public StaffBean(String fullname, String position, int phone, String address, String email, String password, String cpassword, String username) {
+    public StaffBean(int staffId, String fullname, String position, int phone, String address, String email, String password, String cpassword, String username) {
+        this.staffId = staffId;
         this.fullname = fullname;
         this.position = position;
         this.phone = phone;
@@ -103,7 +104,7 @@ public class StaffBean implements java.io.Serializable {
         return staffId;
     }
 
-    public void setStaffId(long staffId) {
+    public void setStaffId(int staffId) {
         this.staffId = staffId;
     }
 }
