@@ -11,6 +11,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -40,7 +41,7 @@ public class HomeDao {
 
                     if (branchRs.next()) {
                         int ibid = rs.getInt("IBID");
-                        Date datetime = rs.getDate("DATETIME");
+                        Timestamp datetime = rs.getDateTime();
                         String status = rs.getString("STATUS");
                         int itemid = rs.getInt("ITEMID");
                         int branchid = branchRs.getInt("BRANCHID");
