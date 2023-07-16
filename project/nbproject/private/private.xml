@@ -3,10 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/dao/RegisterDao.java</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/util/DBConnection.java</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/web/registration.jsp</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/controller/RegisterServlet.java</file>
+            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/dao/HomeDao.java</file>
+            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/dao/LoginDao.java</file>
+            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/util/DBConnection.java</file>
+            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/bean/BranchBean.java</file>
+            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/conf/MANIFEST.MF</file>
+            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/web/registration.jsp</file>
+            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/bean/ItemBranchBean.java</file>
+            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/controller/RegisterServlet.java</file>
+            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/controller/HomeServlet.java</file>
+            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/src/java/bean/StaffBean.java</file>
+            <file>file:/C:/eplatform/code/uitm/help-neally/csc584/project/web/home.jsp</file>
         </group>
     </open-files>
 </project-private>

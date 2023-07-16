@@ -5,11 +5,15 @@
  */
 package dao;
 
-import bean.HomeBean;
+import bean.BranchBean;
+import bean.ItemBranchBean;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 import util.DBConnection;
 
 /**
@@ -18,26 +22,70 @@ import util.DBConnection;
  */
 public class HomeDao {
 
-    public String search(HomeBean homeBean) {
+    public static List<ItemBranchBean> getItemBranchesByItemId(int itemId) {
 
-        String searching = homeBean.getSearching();
-
+        List<ItemBranchBean> itemBranches = new ArrayList<>();
         Connection con = null;
         Statement statement = null;
-        ResultSet resultSet = null;
-        String searchingDB = "";
-        int itemidDB = 0;
 
         try {
             con = DBConnection.createConnection();
             statement = con.createStatement();
-            resultSet = statement.executeQuery("select ItemID, BranchID , DateTime , Status  from ITEM_BRANCH where ibid='" + searching + "'");
+            ResultSet rs = statement.executeQuery("SELECT * FROM ITEM_BRANCH WHERE ITEMID=" + itemId);
+            while (rs.next()) {
+                Statement statementBranch = null;
+                try {
+                    statementBranch = con.createStatement();
+                    ResultSet branchRs = statementBranch.executeQuery("SELECT * FROM BRANCH WHERE BRANCHID=" + rs.getInt("BRANCHID"));
 
+                    if (branchRs.next()) {
+                        int ibid = rs.getInt("IBID");
+                        Date datetime = rs.getDate("DATETIME");
+                        String status = rs.getString("STATUS");
+                        int itemid = rs.getInt("ITEMID");
+                        int branchid = branchRs.getInt("BRANCHID");
+                        String location = branchRs.getString("LOCATION");
+                        String poscode = branchRs.getString("POSCODE");
+                        int vehicleid = rs.getInt("VEHICLEID");
+
+                        itemBranches.add(new ItemBranchBean(
+                                rs.getInt("IBID"),
+                                 rs.getTimestamp("DATETIME"),
+                                 rs.getString("STATUS"),
+                                 rs.getInt("ITEMID"),
+                                 new BranchBean(branchRs.getInt("BRANCHID"),
+                                         branchRs.getString("LOCATION"),
+                                         branchRs.getString("POSCODE")),
+                                 rs.getInt("VEHICLEID")
+                        ));
+                    }
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                } finally {
+                    try {
+                        if (statementBranch != null) {
+                            statementBranch.close();
+                        }
+                    } catch (SQLException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+            }
         } catch (SQLException ex) {
             ex.printStackTrace();
+        } finally {
+            try {
+                if (con != null) {
+                    con.close();
+                }
+                if (statement != null) {
+                    statement.close();
+                }
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
         }
 
-        return "No match record in the system";
+        return itemBranches;
     }
-
 }

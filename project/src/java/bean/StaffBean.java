@@ -12,14 +12,14 @@ package bean;
 public class StaffBean implements java.io.Serializable {
     
     private long staffId;
-    public String fullname;
-    public String position;
-    public int phone;
-    public String address;
-    public String email;
-    public String password;
-    public String cpassword;
-    public String username;
+    private String fullname;
+    private String position;
+    private int phone;
+    private String address;
+    private String email;
+    private String password;
+    private String cpassword;
+    private String username;
 
     public StaffBean() {
     }

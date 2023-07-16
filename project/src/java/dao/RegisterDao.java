@@ -19,9 +19,11 @@ import util.DBConnection;
 public class RegisterDao {
 
     public static boolean registerUser(StaffBean registerBean) {
+        Connection con = null;
+        Statement statement = null;
         try {
-            Connection con = DBConnection.createConnection();
-            Statement statement = con.createStatement();
+            con = DBConnection.createConnection();
+            statement = con.createStatement();
             int result = statement.executeUpdate("insert into STAFF (STAFFNAME, STAFFPOSITION, STAFFPHONE, STAFFADD, STAFFEMAIL, PASSWORD, USERNAME) "
                     + "VALUES ('" + registerBean.getFullname() + "', '"
                     + registerBean.getPosition() + "', "
@@ -35,6 +37,15 @@ public class RegisterDao {
 
         } catch (SQLException ex) {
             ex.printStackTrace();
+        } finally {
+            try {
+                if (con != null)
+                    con.close();
+                if (statement != null)
+                    statement.close();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
         }
 
         return false;
