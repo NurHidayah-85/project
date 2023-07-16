@@ -40,6 +40,7 @@ public class HomeDao {
                     ResultSet branchRs = statementBranch.executeQuery("SELECT * FROM BRANCH WHERE BRANCHID=" + rs.getInt("BRANCHID"));
 
                     if (branchRs.next()) {
+<<<<<<< HEAD
                         int ibid = rs.getInt("IBID");
                         Timestamp datetime = rs.getDateTime("DATETIME");
                         String status = rs.getString("STATUS");
@@ -58,6 +59,17 @@ public class HomeDao {
                                          branchRs.getString("LOCATION"),
                                          branchRs.getInt("POSCODE")),
                                  rs.getInt("VEHICLEID")
+=======
+                        itemBranches.add(new ItemBranchBean(
+                                rs.getInt("IBID"),
+                                rs.getTimestamp("DATETIME"),
+                                rs.getString("STATUS"),
+                                rs.getInt("ITEMID"),
+                                new BranchBean(branchRs.getInt("BRANCHID"),
+                                        branchRs.getString("LOCATION"),
+                                        branchRs.getInt("POSCODE")),
+                                rs.getInt("VEHICLE")
+>>>>>>> d1c95b57d6fdeddda6dbe5f5464c8bc2be2a7d17
                         ));
                     }
                 } catch (SQLException ex) {
