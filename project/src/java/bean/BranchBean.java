@@ -12,12 +12,12 @@ package bean;
 public class BranchBean {
     private int branchId;
     private String location;
-    private String poscode;
+    private int poscode;
 
     public BranchBean() {}
     
-    public BranchBean(int branchId, String location, String poscode) {
-        this.branchId = branchId;
+    public BranchBean(String location, int poscode) {
+        
         this.location = location;
         this.poscode = poscode;
     }
@@ -38,11 +38,11 @@ public class BranchBean {
         this.location = location;
     }
 
-    public String getPoscode() {
+    public int getPoscode() {
         return poscode;
     }
 
-    public void setPoscode(String poscode) {
+    public void setPoscode(int poscode) {
         this.poscode = poscode;
     }
     

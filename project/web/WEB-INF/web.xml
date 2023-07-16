@@ -20,6 +20,10 @@
         <servlet-name>AddVehicleServlet</servlet-name>
         <servlet-class>controller.AddVehicleServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddBranchServlet</servlet-name>
+        <servlet-class>controller.AddBranchServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>AddVehicleServlet</servlet-name>
         <url-pattern>/AddVehicleServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddBranchServlet</servlet-name>
+        <url-pattern>/AddBranchServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

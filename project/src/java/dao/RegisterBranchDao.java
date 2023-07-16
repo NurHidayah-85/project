@@ -5,7 +5,7 @@
  */
 package dao;
 
-import bean.VehicleBean;
+import bean.BranchBean;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,18 +15,19 @@ import util.DBConnection;
  *
  * @author LENOVO
  */
-public class RegisterVehicleDao {
+public class RegisterBranchDao {
     
-  public static boolean addvehicle(VehicleBean addvehicleBean) {
+  public static boolean addbranch(BranchBean addbranchBean) {
 
      Connection con = null;
         Statement statement = null;
         try {
             con = DBConnection.createConnection();
             statement = con.createStatement();
-            int result = statement.executeUpdate("insert into VEHICLE (VEHICLETYPE, NOPLATE) "
-                    + "VALUES ('" + addvehicleBean.getVehicletype() + "', '"
-                    + addvehicleBean.getNoplate() +  "')");
+            int result = statement.executeUpdate("insert into BRANCH (BRANCHID, LOCATION, POSCODE) "
+                    + "VALUES ('" + addbranchBean.getBranchId() + "', '"
+                    + addbranchBean.getLocation() + "', "
+                    + addbranchBean.getPoscode() +  "')");
 
             return true;
 
