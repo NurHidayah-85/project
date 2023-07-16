@@ -1,0 +1,4 @@
+create table VEHICLE (
+vehicleid int primary key generated always as identity,
+vehicletype varchar(50),
+noplate int);

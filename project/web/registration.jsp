@@ -65,7 +65,7 @@
                         <td><input type="password" maxlength="6" name="cpassword" placeholder="Enter your confirm password" /></td>
                     </tr>
                     <tr>
-                    <td><input type="submit" value="Confirm Registration" /></td>
+                    <td><input type="submit" value="Register" /></td>
                         <td><input type="reset" value="Reset" /></td>
                     </tr>
                    </table>
