@@ -26,7 +26,7 @@ public class RegisterBranchDao {
             statement = con.createStatement();
             int result = statement.executeUpdate("insert into BRANCH (LOCATION, POSCODE) "
                     + "VALUES ('" + addbranchBean.getLocation() + "', "
-                    + addbranchBean.getPoscode() +  "')");
+                    + addbranchBean.getPoscode() +  ")");
 
             return true;
 
