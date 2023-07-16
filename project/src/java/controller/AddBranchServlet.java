@@ -6,7 +6,7 @@
 package controller;
 
 import bean.BranchBean;
-import dao.RegisterBranchDao;
+import dao.BranchDao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -68,7 +68,7 @@ public class AddBranchServlet extends HttpServlet {
 
             BranchBean addbranchBean = new BranchBean(location, poscode);
 
-            if (RegisterBranchDao.addbranch(addbranchBean)) {
+            if (BranchDao.addbranch(addbranchBean)) {
                 request.getRequestDispatcher("/dashboard.jsp").forward(request, response);
                 return;
             } else {
