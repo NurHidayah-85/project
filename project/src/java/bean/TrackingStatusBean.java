@@ -23,10 +23,9 @@ public class TrackingStatusBean {
     public TrackingStatusBean() {
     }
 
-    public TrackingStatusBean(int itemId, int branchId, Timestamp dateTime, String status, int vehicleId) {
+    public TrackingStatusBean(int itemId, int branchId, String status, int vehicleId) {
         this.itemId = itemId;
         this.branchId = branchId;
-        this.dateTime = dateTime;
         this.status = status;
         this.vehicleId = vehicleId;
     }
