@@ -48,18 +48,18 @@ public class RegisterServlet extends HttpServlet {
             String email = request.getParameter("email");
             String username = request.getParameter("username");
 
-            StaffBean registerBean = new StaffBean(staffId, fullname, position, phone, address, email, password, cpassword, username);
+            StaffBean registerBean = new StaffBean(staffId, fullname, position, phone, address, email, password, username, cpassword);
 
             if (RegisterDao.registerUser(registerBean)) {
                 request.getRequestDispatcher("/login.jsp").forward(request, response);
                 return;
             }
             else {
-                request.setAttribute("message", "Insert unsuccessful!");
+                request.setAttribute("errMessage", "Insert unsuccessful!");
             }
         }
         else {
-                request.setAttribute("message", "The passwords are not the same!");
+                request.setAttribute("errMessage", "The passwords are not the same!");
         }
         
         request.getRequestDispatcher("/registration.jsp").forward(request, response);

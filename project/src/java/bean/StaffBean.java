@@ -24,7 +24,7 @@ public class StaffBean implements java.io.Serializable {
     public StaffBean() {
     }
 
-    public StaffBean(int staffId, String fullname, String position, int phone, String address, String email, String password, String cpassword, String username) {
+    public StaffBean(int staffId, String fullname, String position, int phone, String address, String email, String password, String username, String cpassword) {
         this.staffId = staffId;
         this.fullname = fullname;
         this.position = position;
@@ -32,8 +32,8 @@ public class StaffBean implements java.io.Serializable {
         this.address = address;
         this.email = email;
         this.password = password;
-        this.cpassword = cpassword;
         this.username = username;
+        this.cpassword = cpassword;
     }
 
     public String getFullname() {

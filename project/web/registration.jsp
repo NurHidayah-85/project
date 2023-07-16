@@ -19,7 +19,7 @@
                         <td><li>Staff ID</li></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="staffId" placeholder="Enter your ID" /></td>
+                        <td><input type="number" name="staffId" placeholder="Enter your ID" /></td>
                     </tr>
                     <tr>
                         <td><li>Name</li></td>
@@ -74,7 +74,14 @@
                         <td><input type="reset" value="Reset" /></td>
                     </tr>
                    </table>
-
+                    <p style="color:red;"> <%
+                            if (request.getAttribute("errMessage") == null) {
+                            } else {
+                                %>
+                                <%= request.getAttribute("errMessage") %>
+                                <%
+                            }
+                                %></p>
                   
 
             
