@@ -3,10 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/week%2013/Iventory/src/java/util/DBConnection.java</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/week%2013/Iventory/src/java/bean/RegisterBean.java</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/week%2013/Iventory/src/java/controller/RegisterServlet.java</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/week%2013/Iventory/src/java/dao/RegisterDao.java</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/Iventory_lab13/web/home.jsp</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/Iventory_lab13/src/java/dao/LoginDao.java</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/Iventory_lab13/src/java/controller/HomeServlet.java</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/Iventory_lab13/src/java/dao/HomeDao.java</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/Iventory_lab13/src/java/bean/HomeBean.java</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/Iventory_lab13/web/login.jsp</file>
         </group>
     </open-files>
 </project-private>
