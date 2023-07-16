@@ -41,7 +41,7 @@ public class HomeDao {
 
                     if (branchRs.next()) {
                         int ibid = rs.getInt("IBID");
-                        Timestamp datetime = rs.getDateTime();
+                        Timestamp datetime = rs.getDateTime("DATETIME");
                         String status = rs.getString("STATUS");
                         int itemid = rs.getInt("ITEMID");
                         int branchid = branchRs.getInt("BRANCHID");
@@ -56,7 +56,7 @@ public class HomeDao {
                                  rs.getInt("ITEMID"),
                                  new BranchBean(branchRs.getInt("BRANCHID"),
                                          branchRs.getString("LOCATION"),
-                                         branchRs.getString("POSCODE")),
+                                         branchRs.getInt("POSCODE")),
                                  rs.getInt("VEHICLEID")
                         ));
                     }
