@@ -40,6 +40,18 @@
         <servlet-name>DisplayBranchesServlet</servlet-name>
         <servlet-class>controller.DisplayBranchesServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DeleteVehicleServlet</servlet-name>
+        <servlet-class>controller.DeleteVehicleServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DisplayVehiclesServlet</servlet-name>
+        <servlet-class>controller.DisplayVehiclesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditVehiclesServlet</servlet-name>
+        <servlet-class>controller.EditVehiclesServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
@@ -79,6 +91,18 @@
     <servlet-mapping>
         <servlet-name>DisplayBranchesServlet</servlet-name>
         <url-pattern>/DisplayBranchesServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteVehicleServlet</servlet-name>
+        <url-pattern>/DeleteVehicleServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayVehiclesServlet</servlet-name>
+        <url-pattern>/DisplayVehiclesServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditVehiclesServlet</servlet-name>
+        <url-pattern>/EditVehiclesServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
