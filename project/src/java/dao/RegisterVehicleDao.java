@@ -17,7 +17,7 @@ import util.DBConnection;
  */
 public class RegisterVehicleDao {
     
-  public static boolean addvehicle(VehicleBean addvehicleBean) {
+  public String addvehicle(VehicleBean addvehicleBean) {
 
      Connection con = null;
         Statement statement = null;
@@ -28,7 +28,7 @@ public class RegisterVehicleDao {
                     + "VALUES ('" + addvehicleBean.getVehicletype() + "', '"
                     + addvehicleBean.getNoplate() +  "')");
 
-            return true;
+            return "SUCCESS";
 
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -43,7 +43,7 @@ public class RegisterVehicleDao {
             }
         }
 
-        return false;
+        return "Invalid to add";
     }
 
 }
