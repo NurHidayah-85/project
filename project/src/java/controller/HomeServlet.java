@@ -50,10 +50,15 @@ public class HomeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        int shipId = Integer.parseInt(request.getParameter("shipId"));
+        String shipId = request.getParameter("shipId");
+        if (shipId == null || shipId.equals("")) {
+            request.setAttribute("itemBranches", new ArrayList<ItemBranchBean>());
+        }
+        else {
+            request.setAttribute("itemBranches", HomeDao.getItemBranchesByItemId(Integer.parseInt(shipId)));
+        }
         
-        request.setAttribute("itemBranches", HomeDao.getItemBranchesByItemId(shipId));
-        request.setAttribute("shipId", "" + shipId);
+        request.setAttribute("shipId", shipId);
         request.getRequestDispatcher("/home.jsp").forward(request, response);
     }
 
