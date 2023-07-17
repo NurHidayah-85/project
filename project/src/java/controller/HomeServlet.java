@@ -34,7 +34,7 @@ public class HomeServlet extends HttpServlet {
             throws ServletException, IOException {
         
         request.setAttribute("itemBranches", new ArrayList<ItemBranchBean>());
-        request.setAttribute("shipId", "");
+        request.setAttribute("itemId", "");
         request.getRequestDispatcher("/home.jsp").forward(request, response);
     }
 
@@ -50,15 +50,15 @@ public class HomeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        String shipId = request.getParameter("shipId");
-        if (shipId == null || shipId.equals("")) {
+        String itemId = request.getParameter("itemId");
+        if (itemId == null || itemId.equals("")) {
             request.setAttribute("itemBranches", new ArrayList<ItemBranchBean>());
         }
         else {
-            request.setAttribute("itemBranches", HomeDao.getItemBranchesByItemId(Integer.parseInt(shipId)));
+            request.setAttribute("itemBranches", HomeDao.getItemBranchesByItemId(Integer.parseInt(itemId)));
         }
         
-        request.setAttribute("shipId", shipId);
+        request.setAttribute("itemId", itemId);
         request.getRequestDispatcher("/home.jsp").forward(request, response);
     }
 

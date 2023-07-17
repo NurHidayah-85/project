@@ -8,7 +8,7 @@
 <%@page import="bean.BranchBean"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <jsp:useBean id="itemBranches" scope="request" class="java.util.List<bean.ItemBranchBean>" />
-<jsp:useBean id="shipId" scope="request" class="String" />
+<jsp:useBean id="itemId" scope="request" class="String" />
 <!DOCTYPE html>
 <html>
     <head>
@@ -38,10 +38,10 @@
                 </tr>
 
             </table>
-        <center>
+        
             <form action="HomeServlet" method="POST">
                 <table border="0" style ="text-align:center" width = "100%">
-                    <tr><td>YOUR PARCEL ID : <input type="number" name="shipId" placeholder="---Enter here---" value="<%= shipId %>" /></td></tr>
+                    <tr><td>YOUR PARCEL ID : <input type="number" name="itemId" placeholder="---Enter here---" value="<%= itemId %>" /></td></tr>
                     <tr><td><input type="submit" value="Check" name="check" /></td></tr>
                 </table>
             </form>
@@ -49,7 +49,7 @@
         </center>
         <br>
         <br>
-        <% if (!"".equals(shipId)) {
+        <% if (!"".equals(itemId)) {
                 if (itemBranches.size() == 0) {
         %>
         <p>No entries found to this parcel id</p>
