@@ -3,14 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/controller/AddParcelServlet.java</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/dao/RegisterDao.java</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/controller/AddTrackingStatusServlet.java</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/web/regparcel.jsp</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/web/trackingstatus.jsp</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/web/index.jsp</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/web/home.jsp</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/web/success.jsp</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/web/dashboard.jsp</file>
             <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/bean/RegInformationBean.java</file>
-            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/controller/AddBranchServlet.java</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/web/checkparcel.jsp</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/web/regbranch.jsp</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/web/regparcel.jsp</file>
             <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/dao/RegParcelDao.java</file>
+            <file>file:/C:/Users/LENOVO/Documents/UITM%20MAC2023_AUGUST2023/CSC584/project_2/project/src/java/controller/AddParcelServlet.java</file>
         </group>
     </open-files>
 </project-private>

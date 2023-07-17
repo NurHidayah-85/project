@@ -11,11 +11,21 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>home</title>
+     <style>
+            table, td, th {
+                text-align: center;
+            }
+        </style>
     </head>
     <center> <body>
-        <h1>Home Page</h1>
-        <p> Welcome <%=request.getAttribute("username")%> </p>
-        <p> <a href="LogoutServlet">Logout</a></p>
+            <table border="0" style ="text-align:center" width = "100%">
+
+                <tr><td>HOME</td><td> | </td><td>SERVICE</td><td> | </td><td>ABOUT</td><td> | </td><td><%=request.getAttribute("username")%> |  <a href="LogoutServlet">Logout</a></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            
     </body>
     </center>
 </html>
