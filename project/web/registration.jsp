@@ -11,55 +11,56 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Registration</title>
     </head>
+    <center>
     <body>
-        <h1>User Registration</h1>
+        <h1>User Registration ANC Express Delivery</h1>
         <form action="RegisterServlet" method="POST">
             <table>
                
                     <tr>
-                        <td><li>Name</li></td>
+                        <td>Name</td>
                     </tr>
                     <tr>
                         <td><input type="text" name="fullname" placeholder="Enter your name" /></td>
                     </tr>
                     <tr>
-                        <td><li>Position</li></td>
+                        <td>Position</td>
                     </tr>
                     <tr>
                         <td><input type="text" name="position" placeholder="Enter your position" /></td>
                     </tr>
                     <tr>
-                        <td><li>Phone</li></td>
+                        <td>Phone</td>
                     </tr>
                     <tr>
                         <td><input type="number" name="phone" placeholder="Enter your phonenumber" /></td>
                     </tr>
                     <tr>
-                        <td><li>Address</li></td>
+                        <td>Address</td>
                     </tr>
                     <tr>
                         <td><input type="text" name="address" placeholder="Enter your address" /></td>
                     </tr>
                     <tr>
-                        <td><li>Email</li></td>
+                        <td>Email</td>
                     </tr>
                     <tr>
                         <td><input type="text" name="email" placeholder="Enter your email" /></td>
                     </tr>
                     <tr>
-                        <td><li>Username</li></td>
+                        <td>Username</td>
                     </tr>
                     <tr>
                         <td><input type="text" name="username" placeholder="Enter your username" /></td>
                     </tr>
                     <tr>
-                        <td><li>Password</li></td>
+                        <td>Password</td>
                     </tr>
                     <tr>
                         <td><input type="password" maxlength="6" name="password" placeholder="Enter your password" /></td>
                     </tr>
                     <tr>
-                        <td><li>Confirm Password</li></td>
+                        <td>Confirm Password</td>
                     </tr>
                     <tr>
                         <td><input type="password" maxlength="6" name="cpassword" placeholder="Enter your confirm password" /></td>
@@ -83,4 +84,5 @@
         </form>
         
     </body>
+    </center>
 </html>
