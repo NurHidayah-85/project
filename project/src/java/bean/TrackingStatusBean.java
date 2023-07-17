@@ -6,6 +6,7 @@
 package bean;
 
 import java.sql.Timestamp;
+import java.time.Instant;
 
 /**
  *
@@ -28,6 +29,7 @@ public class TrackingStatusBean {
         this.branchId = branchId;
         this.status = status;
         this.vehicleId = vehicleId;
+        this.dateTime = Timestamp.from(Instant.now());
     }
 
     public int getIbId() {
