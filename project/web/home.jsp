@@ -38,7 +38,7 @@
                 </tr>
 
             </table>
-        <center>
+        
             <form action="HomeServlet" method="POST">
                 <table border="0" style ="text-align:center" width = "100%">
                     <tr><td>YOUR PARCEL ID : <input type="number" name="itemId" placeholder="---Enter here---" value="<%= itemId %>" /></td></tr>
