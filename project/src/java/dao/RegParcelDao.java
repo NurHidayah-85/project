@@ -36,11 +36,10 @@ public class RegParcelDao {
                     + reginfoBean.getCustrposcode() + "', '"
                     + reginfoBean.getCustremail() + "')");
 
-            int result3 = statement.executeUpdate("insert into ITEM ( CUSTNAME, CUSTPHONE, CUSTADD, CUSTPOSCODE, CUSTEMAIL, SHIPTYPE, STAFFID, CUSTRID, CUSTSID) "
-                    + "VALUES ('" + reginfoBean.getItemid() + "', '"
-                     + reginfoBean.getWeight() + ", '"
-                    + reginfoBean.getHeight() + "', '"
-                    + reginfoBean.getShiptype() + "', '"
+            int result3 = statement.executeUpdate("insert into ITEM ( WEIGHT, HEIGHT, SHIPTYPE, STAFFID, CUSTRID, CUSTSID) "
+                    + "VALUES ('" + reginfoBean.getWeight() + "', '"
+                     + reginfoBean.getHeight() + ", '"
+                     + reginfoBean.getShiptype() + "', '"
                      + reginfoBean.getStaffid() + "', '"
                      + reginfoBean.getCustrid() + "', '"
                     + reginfoBean.getCustsid() + "')");
