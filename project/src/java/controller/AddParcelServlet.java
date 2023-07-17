@@ -29,10 +29,9 @@ public class AddParcelServlet extends HttpServlet {
 
             double weight = Double.parseDouble(request.getParameter("weight"));
             double height = Double.parseDouble(request.getParameter("height"));
-            String shiptype = request.getParameter("shiptype");
+            double shiptype = Double.parseDouble(request.getParameter("shiptype"));
 
-            int custsid = Integer.parseInt(request.getParameter("custsid"));
-            int custrid = Integer.parseInt(request.getParameter("custrid"));
+            
             int staffid = Integer.parseInt(request.getParameter("staffid"));
 
             RegInformationBean reginfoBean = new RegInformationBean(custsname, custsphone, custsadd, custsposcode, custsemail, custrname, custrphone, custradd, custrposcode, custremail, weight, height, shiptype, staffid);
@@ -47,7 +46,7 @@ public class AddParcelServlet extends HttpServlet {
             request.setAttribute("errMessage", "Please insert Branch poscode");
         }
 
-        request.getRequestDispatcher("/regbranch.jsp").forward(request, response);
+        request.getRequestDispatcher("/regparcel.jsp").forward(request, response);
     }
 
     @Override

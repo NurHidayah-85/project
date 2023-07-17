@@ -28,7 +28,7 @@ public class RegInformationBean {
     private int itemid;
     private double weight;
     private double height;
-    private String shiptype;
+    private double shiptype;
     
     
     private int staffid;
@@ -36,7 +36,7 @@ public class RegInformationBean {
     public RegInformationBean() {
     }
 
-    public RegInformationBean(String custsname, int custsphone, String custsadd, int custsposcode, String custsemail, String custrname, int custrphone, String custradd, int custrposcode, String custremail, double weight, double height, String shiptype, int staffid) {
+    public RegInformationBean(String custsname, int custsphone, String custsadd, int custsposcode, String custsemail, String custrname, int custrphone, String custradd, int custrposcode, String custremail, double weight, double height, double shiptype, int staffid) {
         this.custsname = custsname;
         this.custsphone = custsphone;
         this.custsadd = custsadd;
@@ -53,7 +53,7 @@ public class RegInformationBean {
         this.staffid = staffid;
     }
 
-    public RegInformationBean(int custsid, String custsname, int custsphone, String custsadd, int custsposcode, String custsemail, int custrid, String custrname, int custrphone, String custradd, int custrposcode, String custremail, int itemid, double weight, double height, String shiptype, int staffid) {
+    public RegInformationBean(int custsid, String custsname, int custsphone, String custsadd, int custsposcode, String custsemail, int custrid, String custrname, int custrphone, String custradd, int custrposcode, String custremail, int itemid, double weight, double height, double shiptype, int staffid) {
         this.custsid = custsid;
         this.custsname = custsname;
         this.custsphone = custsphone;
@@ -193,11 +193,11 @@ public class RegInformationBean {
         this.height = height;
     }
 
-    public String getShiptype() {
+    public double getShiptype() {
         return shiptype;
     }
 
-    public void setShiptype(String shiptype) {
+    public void setShiptype(double shiptype) {
         this.shiptype = shiptype;
     }
 

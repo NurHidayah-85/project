@@ -39,7 +39,7 @@ itemid int primary key generated always as identity,
 weight double,
 height double,
 fee int,
-shiptype varchar(50),
+shiptype double,
 staffid int,
 custrid int,
 custsid int);
