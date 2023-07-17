@@ -20,7 +20,7 @@
     <center> <body>
             <table border="0" style ="text-align:center" width = "100%">
 
-                <tr><td>HOME</td><td> | </td><td>SERVICE</td><td> | </td><td>ABOUT</td><td> | </td><td>LOGIN</td>
+                <tr><td>HOME</td><td> | </td><td>SERVICE</td><td> | </td><td>ABOUT</td><td> | </td><td><a href="login.jsp">LOGIN</a></td>
                 </tr>
 
                 <tr> <td colspan="7" style="text-align:center"><br><br><p>Welcome to ANC Express Tracking Parcel<br>
