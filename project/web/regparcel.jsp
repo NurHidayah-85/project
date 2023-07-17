@@ -14,8 +14,8 @@
     <center>
     <h1> --Parcel Registration--</h1><br>
         <p>Please enter informations below.</p>
-        <form action="RegisterParcelServlet" method="post">
-        <form method = "post">
+        <form action="AddParcelServlet" method="post">
+       
         <table border="0">
             
             <tr><th>Sender Information</th>
@@ -121,7 +121,7 @@
                 <option value = "Kedah">Kedah </option>
                 <option value = "Melaka">Melaka </option>
                 <option value = "Johor">Johor </option>
-                <option value = "Negeri Sembilan">Negeri Sembilan </option>
+                <option value = "N.Sembilan">Negeri Sembilan </option>
                 </select>  </td>
                     <td></td>
                     <td></td>
