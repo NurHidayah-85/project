@@ -14,7 +14,7 @@ import util.DBConnection;
  *
  * @author LENOVO
  */
-public class AddTrackingStatusDao {
+public class TrackingStatusDao {
     
 public static boolean addtrackingstatus(TrackingStatusBean addtrackingstatusBean) {
 
@@ -23,7 +23,7 @@ public static boolean addtrackingstatus(TrackingStatusBean addtrackingstatusBean
         try {
             con = DBConnection.createConnection();
             statement = con.createStatement();
-            int result = statement.executeUpdate("insert into ITEM_BRANCH(ITEMID,BRANCHID, STATUS, VEHICLEID) "
+            int result = statement.executeUpdate("insert into ITEM_BRANCH(ITEMID, BRANCHID, STATUS, VEHICLEID)"
                     + "VALUES ('" + addtrackingstatusBean.getItemId() + "', '"
                     + addtrackingstatusBean.getBranchId() + "', '"
                     + addtrackingstatusBean.getStatus()+ "', '"

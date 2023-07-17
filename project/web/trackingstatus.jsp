@@ -25,15 +25,15 @@
                
                     <tr>
                        <td>Branch Location: </td>
-                        <td><select name="branchId">
-                            <option value=1>Selangor</option>
-                            <option value=2>Kedah</option>
-                            <option value=3>Perak</option>
-                            <option value=4>Malacca</option>
-                            <option value=5>Kelantan</option>
-                            <option value=6>Terengganu</option>
-                            <option value=7>Johore</option>
-                            <option value=8>Penang</option>
+                        <td><select  name="branchId">
+                            <option value="1">Selangor</option>
+                            <option value="2">Kedah</option>
+                            <option value="3">Perak</option>
+                            <option value="4">Malacca</option>
+                            <option value="5">Kelantan</option>
+                            <option value="6">Terengganu</option>
+                            <option value="7">Johore</option>
+                            <option value="8">Penang</option>
                           </select></td>
                     </tr>
                     <tr>
@@ -52,13 +52,13 @@
                         <td>Vehicle Type: </td>
                         <td>
                             <select name="vehicleId">
-                                <option value=0>None</option>
-                                <option value=1>van</option>
-                                <option value=2>lorry</option>
-                                <option value=3>motorcycle</option>
-                                <option value=4>car</option>
-                                <option value=5>ship</option>
-                                <option value=6>air</option>
+                                <option value="0">None</option>
+                                <option value="1">van</option>
+                                <option value="2">lorry</option>
+                                <option value="3">motorcycle</option>
+                                <option value="4">car</option>
+                                <option value="5">ship</option>
+                                <option value="6">air</option>
                               
                             </select>
                         </td>

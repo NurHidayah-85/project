@@ -6,7 +6,7 @@
 package controller;
 
 import bean.TrackingStatusBean;
-import dao.AddTrackingStatusDao;
+import dao.TrackingStatusDao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -61,24 +61,24 @@ public class AddTrackingStatusServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int branchId = Integer.parseInt(request.getParameter("branchId"));
+        String status = request.getParameter("status");
 
-        if (branchId != 0) {
-             int itemId = Integer.parseInt(request.getParameter("itemId"));
-            String status = request.getParameter("status");
+        if (status != null) {
+             int branchId = Integer.parseInt(request.getParameter("branchId"));
+            int itemId = Integer.parseInt(request.getParameter("itemId"));
             int vehicleId =  Integer.parseInt(request.getParameter("vehicleId"));
             
 
-            TrackingStatusBean addtrackingBean = new TrackingStatusBean(itemId,branchId, status,vehicleId);
+            TrackingStatusBean addtrackingBean = new TrackingStatusBean(itemId, branchId, status, vehicleId);
 
-            if (AddTrackingStatusDao.addtrackingstatus(addtrackingBean)) {
+            if (TrackingStatusDao.addtrackingstatus(addtrackingBean)) {
                 request.getRequestDispatcher("/dashboard.jsp").forward(request, response);
                 return;
             } else {
                 request.setAttribute("errMessage", "Insert unsuccessful!");
             }
         } else {
-            request.setAttribute("errMessage", "Please insert the following fields");
+            request.setAttribute("errMessage", "Please insert the following fields correctly");
         }
 
         request.getRequestDispatcher("/trackingstatus.jsp").forward(request, response);
