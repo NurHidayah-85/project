@@ -77,6 +77,15 @@ public class TrackingStatusBean {
     public void setVehicleId(int vehicleId) {
         this.vehicleId = vehicleId;
     }
+
+    public TrackingStatusBean(int ibId, int itemId, int branchId, Timestamp dateTime, String status, int vehicleId) {
+        this.ibId = ibId;
+        this.itemId = itemId;
+        this.branchId = branchId;
+        this.dateTime = dateTime;
+        this.status = status;
+        this.vehicleId = vehicleId;
+    }
     
     
     

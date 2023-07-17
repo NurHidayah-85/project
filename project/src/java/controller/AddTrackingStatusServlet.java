@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class AddTrackingStatusServlet extends HttpServlet {
 
-    /**
+   /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
      *
@@ -31,8 +31,24 @@ public class AddTrackingStatusServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-          processRequest(request, response);
+     
     }
+
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    /**
+     * Handles the HTTP <code>GET</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+
 
     /**
      * Handles the HTTP <code>POST</code> method.
@@ -47,10 +63,10 @@ public class AddTrackingStatusServlet extends HttpServlet {
             throws ServletException, IOException {
         int branchId = Integer.parseInt(request.getParameter("branchId"));
 
-        if (branchId != 00000) {
+        if (branchId != 0) {
              int itemId = Integer.parseInt(request.getParameter("itemId"));
             String status = request.getParameter("status");
-            int vehicleId =  Integer.parseInt(request.getParameter("vehicleId "));
+            int vehicleId =  Integer.parseInt(request.getParameter("vehicleId"));
             
 
             TrackingStatusBean addtrackingBean = new TrackingStatusBean(itemId,branchId, status,vehicleId);
