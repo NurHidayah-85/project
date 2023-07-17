@@ -11,6 +11,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>add vehicle</title>
     </head>
+    <table border="0" align="right">
+         
+                <tr>
+                    <td><button onclick="window.location.href = 'DisplayVehiclesServlet';"/>View List </button></td>
+                </tr>
+            
+        </table>
     <center>
     <body>
         <h1>Add Vehicle</h1>

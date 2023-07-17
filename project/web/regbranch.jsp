@@ -11,8 +11,17 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>add branch</title>
     </head>
-    <center>
-        <body>
+    
+    <body><table border="0" align="right">
+         
+                <tr>
+                    <td><button onclick="window.location.href = 'DisplayBranchesServlet';"/>View List </button></td>
+                </tr>
+            
+        </table>
+
+        
+            <center>
             <h1>Add Branch</h1>
             <form action="AddBranchServlet" method="POST">
                 <table>
@@ -48,6 +57,7 @@
                         }
                     %></p>
             </form>
+             </center>
         </body>
     </center>
 </html>
