@@ -6,6 +6,7 @@
 
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<jsp:useBean id="totalStaff" scope="request" class="Integer" />
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,7 +26,32 @@
             </table>
             <br>
             <br>
-            
+            <table>
+                <tr>
+                    <th>Total income</th>
+                    <th>Total delivery</th>
+                    <th>Total staff</th>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        <%= totalStaff %>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Pending delivery</th>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </table>
     </body>
     </center>
 </html>

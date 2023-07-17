@@ -60,6 +60,10 @@
         <servlet-name>AddParcelServlet</servlet-name>
         <servlet-class>controller.AddParcelServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DashboardServlet</servlet-name>
+        <servlet-class>controller.DashboardServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
@@ -119,6 +123,10 @@
     <servlet-mapping>
         <servlet-name>AddParcelServlet</servlet-name>
         <url-pattern>/AddParcelServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DashboardServlet</servlet-name>
+        <url-pattern>/DashboardServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
