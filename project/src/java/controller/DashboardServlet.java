@@ -33,6 +33,9 @@ public class DashboardServlet extends HttpServlet {
             throws ServletException, IOException {
 
         request.setAttribute("totalStaff", DashboardDao.getTotalStaff());
+        request.setAttribute("totalDelivery", DashboardDao.getTotalDelivery());
+        request.setAttribute("totalIncome", DashboardDao.getTotalIncome());
+        request.setAttribute("totalPending", DashboardDao.getTotalPending());
         
         request.getRequestDispatcher("/dashboard.jsp").forward(request, response);
     }

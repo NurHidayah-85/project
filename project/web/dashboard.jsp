@@ -7,6 +7,10 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <jsp:useBean id="totalStaff" scope="request" class="Integer" />
+<jsp:useBean id="totalDelivery" scope="request" class="Integer" />
+<jsp:useBean id="totalIncome" scope="request" class="Double" />
+<jsp:useBean id="totalPending" scope="request" class="Integer" />
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,27 +32,27 @@
             <br>
             <table>
                 <tr>
-                    <th>Total income</th>
-                    <th>Total delivery</th>
-                    <th>Total staff</th>
+                    <th style="background-color:#ABEBC6; padding: 40px">Total income (RM)</th>
+                    <th style="background-color:#EAFAF1; padding: 40px">Total delivery</th>
+                    <th style="background-color:#ABEBC6; padding: 40px">Total staff</th>
                 </tr>
                 <tr>
-                    <td>
-                        
+                    <td style="padding: 40px">
+                        <%= totalIncome %>
                     </td>
-                    <td>
-                        
+                    <td style="padding: 40px">
+                        <%= totalDelivery %>
                     </td>
-                    <td>
+                    <td style="padding: 40px">
                         <%= totalStaff %>
                     </td>
                 </tr>
                 <tr>
-                    <th>Pending delivery</th>
+                    <th style="background-color:#EAFAF1; padding: 40px">Pending delivery</th>
                 </tr>
                 <tr>
-                    <td>
-                        
+                    <td style="padding: 40px">
+                        <%= totalPending%>
                     </td>
                 </tr>
             </table>
