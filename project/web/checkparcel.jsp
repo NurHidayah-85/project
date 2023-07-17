@@ -137,6 +137,15 @@
         </table>
        
                 <input type = "reset" value = "Reset"> <input type = "submit" value = "Submit">
+                
+                  <p style="color:red;"> <%
+                    if (request.getAttribute("errMessage") == null) {
+                    } else {
+                    %>
+                    <%= request.getAttribute("errMessage")%>
+                    <%
+                        }
+                    %></p>
          </form>
     </center>
 </html>

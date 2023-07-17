@@ -29,12 +29,13 @@ public class AddParcelServlet extends HttpServlet {
 
             double weight = Double.parseDouble(request.getParameter("weight"));
             double height = Double.parseDouble(request.getParameter("height"));
+            double fee = Double.parseDouble(request.getParameter("fee"));
             double shiptype = Double.parseDouble(request.getParameter("shiptype"));
 
             
             int staffid = Integer.parseInt(request.getParameter("staffid"));
 
-            RegInformationBean reginfoBean = new RegInformationBean(custsname, custsphone, custsadd, custsposcode, custsemail, custrname, custrphone, custradd, custrposcode, custremail, weight, height, shiptype, staffid);
+            RegInformationBean reginfoBean = new RegInformationBean(custsname, custsphone, custsadd, custsposcode, custsemail, custrname, custrphone, custradd, custrposcode, custremail, weight, height, fee, shiptype, staffid);
 
             if (RegParcelDao.reginfo(reginfoBean)) {
                 request.getRequestDispatcher("/dashboard.jsp").forward(request, response);

@@ -26,6 +26,7 @@ public class RegInformationBean {
     private String custremail;
     
     private int itemid;
+    private double fee;
     private double weight;
     private double height;
     private double shiptype;
@@ -36,7 +37,7 @@ public class RegInformationBean {
     public RegInformationBean() {
     }
 
-    public RegInformationBean(String custsname, int custsphone, String custsadd, int custsposcode, String custsemail, String custrname, int custrphone, String custradd, int custrposcode, String custremail, double weight, double height, double shiptype, int staffid) {
+    public RegInformationBean(String custsname, int custsphone, String custsadd, int custsposcode, String custsemail, String custrname, int custrphone, String custradd, int custrposcode, String custremail, double weight, double height, double fee, double shiptype, int staffid) {
         this.custsname = custsname;
         this.custsphone = custsphone;
         this.custsadd = custsadd;
@@ -49,11 +50,12 @@ public class RegInformationBean {
         this.custremail = custremail;
         this.weight = weight;
         this.height = height;
+        this.fee = fee;
         this.shiptype = shiptype;
         this.staffid = staffid;
     }
 
-    public RegInformationBean(int custsid, String custsname, int custsphone, String custsadd, int custsposcode, String custsemail, int custrid, String custrname, int custrphone, String custradd, int custrposcode, String custremail, int itemid, double weight, double height, double shiptype, int staffid) {
+    public RegInformationBean(int custsid, String custsname, int custsphone, String custsadd, int custsposcode, String custsemail, int custrid, String custrname, int custrphone, String custradd, int custrposcode, String custremail, int itemid, double weight, double height,double fee, double shiptype, int staffid) {
         this.custsid = custsid;
         this.custsname = custsname;
         this.custsphone = custsphone;
@@ -69,6 +71,7 @@ public class RegInformationBean {
         this.itemid = itemid;
         this.weight = weight;
         this.height = height;
+        this.fee = fee;
         this.shiptype = shiptype;
         this.staffid = staffid;
     }
@@ -103,6 +106,14 @@ public class RegInformationBean {
 
     public void setCustsadd(String custsadd) {
         this.custsadd = custsadd;
+    }
+
+    public double getFee() {
+        return fee;
+    }
+
+    public void setFee(double fee) {
+        this.fee = fee;
     }
 
     public int getCustsposcode() {
