@@ -68,7 +68,7 @@
                      totalDelivery = resultSet.getInt(1);
 
                              }
-            }
+            
             
             %>
             <table>
@@ -97,6 +97,40 @@
                     </td>
                 </tr>
             </table>
+                    
+            <% 
+                    
+              } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
+        } finally {
+            
+                if (resultSet != null) {
+                      try {
+                        resultSet.close();
+                        } catch (SQLException e) {
+                       }
+                       if (statement != null) {
+                        try {
+                            statement.close();
+                             } catch (SQLException e) {
+                        }
+                        if (con !=null) {
+                            try {
+                                con.close();
+
+                                } catch (SQLException e) {
+                    
+                      }
+
+                    }
+            }
+        }
+%>
+                    
+                    
+                    
     </body>
     </center>
 </html>
