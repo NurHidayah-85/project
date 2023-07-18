@@ -7,6 +7,7 @@ package dao;
 
 import bean.BranchBean;
 import bean.ItemBranchBean;
+import bean.StaffBean;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -57,9 +58,9 @@ public class DashboardDao {
         try {
             con = DBConnection.createConnection();
             statement = con.createStatement();
-            ResultSet rs2 = statement.executeQuery("SELECT COUNT(*) FROM ITEM_BRANCH");
-            rs2.next();
-            totalDelivery  = rs2.getInt(1);
+            ResultSet rs = statement.executeQuery("SELECT COUNT(*) FROM ANC.ITEM_BRANCH");
+            rs.next();
+            totalDelivery  = rs.getInt(1);
         } catch (SQLException ex) {
             ex.printStackTrace();
         } finally {
@@ -88,9 +89,9 @@ public class DashboardDao {
         try {
             con = DBConnection.createConnection();
             statement = con.createStatement();
-            ResultSet rs3 = statement.executeQuery("SELECT SUM(FEE) FROM ITEM");
-            rs3.next();
-            totalIncome  = rs3.getDouble(1);
+            ResultSet rs = statement.executeQuery("SELECT SUM(FEE) FROM ANC.ITEM");
+            rs.next();
+            totalIncome  = rs.getDouble(1);
         } catch (SQLException ex) {
             ex.printStackTrace();
         } finally {
@@ -120,9 +121,9 @@ public class DashboardDao {
         try {
             con = DBConnection.createConnection();
             statement = con.createStatement();
-            ResultSet rs4 = statement.executeQuery("SELECT COUNT(STATUS) FROM ITEM_BRANCH WHERE STATUS = 'Item processed'");
-            rs4.next();
-            totalPending  = rs4.getInt(1);
+            ResultSet rs = statement.executeQuery("SELECT COUNT(STATUS) FROM ANC.ITEM_BRANCH WHERE STATUS = 'Item processed'");
+            rs.next();
+            totalPending  = rs.getInt(1);
         } catch (SQLException ex) {
             ex.printStackTrace();
         } finally {

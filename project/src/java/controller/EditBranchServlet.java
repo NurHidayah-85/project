@@ -60,7 +60,7 @@ public class EditBranchServlet extends HttpServlet {
         BranchBean branch = new BranchBean(branchId, location, poscode);
 
         if (BranchDao.updateBranch(branch)) {
-            request.getRequestDispatcher("dashboard.jsp").forward(request, response);
+            request.getRequestDispatcher("/dashboard.jsp").forward(request, response);
         }
         else {
             request.setAttribute("branch", branch);

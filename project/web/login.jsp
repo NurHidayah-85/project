@@ -10,8 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login</title>
-         <link rel="stylesheet" type="text/css" href="Style.css">
-  <script src="script.js"></script>
+        
     </head>
     <body>
     <center> <h1>Login ANC Express Delivery</h1>
