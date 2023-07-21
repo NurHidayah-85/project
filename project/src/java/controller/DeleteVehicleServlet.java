@@ -53,6 +53,6 @@ public class DeleteVehicleServlet extends HttpServlet {
 
         VehicleDao.deleteVehicle(vehicleid);
         
-        request.getRequestDispatcher("/DisplayViheclesServlet").forward(request, response);
+        request.getRequestDispatcher("/DisplayVehiclesServlet").forward(request, response);
     }
 }

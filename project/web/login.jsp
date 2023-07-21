@@ -1,6 +1,6 @@
 <%-- 
     Document   : login
-    Created on : Jun 19, 2023, 12:59:51 PM
+    Created on : Jun 16, 2023, 12:59:51 PM
     Author     : NUR HIDAYAH BINTI ISHAK 2020496204
 --%>
 
@@ -13,6 +13,13 @@
         
     </head>
     <body>
+         <table border="0" style ="text-align:center" width = "100%">
+
+             <tr><td><a href="HomeServlet">HOME</a></td><td> | </td><td><a href="service.jsp">SERVICE</a></td><td> | </td><td><a href="about.jsp">ABOUT</a></td><td> | </td><td style="background-color:#F7DC6F">LOGIN</td>
+                </tr>
+
+
+            </table>
     <center> <h1>Login ANC Express Delivery</h1>
         <form action="LoginServlet" method="POST">
             <table border="0" cellspacing="4">
@@ -45,6 +52,8 @@
                             }
                                 %></p>
         </form>
+        
+        <p><a href="registration.jsp">Create account</a></p>
     </center>
     </body>
 </html>

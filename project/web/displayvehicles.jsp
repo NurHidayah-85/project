@@ -1,6 +1,6 @@
 <%-- 
     Document   : displayvehicles
-    Created on : Jul 17, 2023, 4:40:29 AM
+    Created on : Jul 16, 2023, 1:37:05 AM
     Author     : LENOVO
 --%>
 
@@ -17,7 +17,7 @@
         <table border="1" style ="text-align:center" width = "100%">
             <p> <h1>Vehicles List</h1></p>
 
-            <tr><th>Id</th><th>Type</th><th>No.Plate</th></tr>
+        <tr><th style="background-color:#ABEBC6">Id</th><th style="background-color:#EAFAF1;">Type</th><th style="background-color:#ABEBC6">No.Plate</th><th style="background-color:#EAFAF1;">Action</th></tr>
 
             <% for (VehicleBean vehicle : vehicles) {
             %>
@@ -28,11 +28,11 @@
                 <td>
                     <form action="DeleteVehicleServlet" method="DELETE">
                         <input type="hidden" name="vehicleid" value="<%= vehicle.getVehicleid() %>">
-                        <input type="submit" value="delete">
+                        <input type="submit" value="Delete">
                     </form>
-                    <form action="EditVehicleServlet" method="GET">
+                    <form action="EditVehiclesServlet" method="GET">
                         <input type="hidden" name="vehicleid" value="<%= vehicle.getVehicleid() %>">
-                        <input type="submit" value="edit">
+                        <input type="submit" value="Edit">
                     </form>
                 </td>
             </tr>

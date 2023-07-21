@@ -61,7 +61,7 @@ public class EditVehiclesServlet extends HttpServlet {
         VehicleBean vehicle = new VehicleBean(vehicleid, vehicletype, noplate);
 
         if (VehicleDao.updateVehicle(vehicle)) {
-            request.getRequestDispatcher("dashboard.jsp").forward(request, response);
+            request.getRequestDispatcher("DisplayVehiclesServlet").forward(request, response);
         }
         else {
             request.setAttribute("vehicle", vehicle);

@@ -1,7 +1,7 @@
 <%-- 
     Document   : home
-    Created on : Jun 19, 2023, 1:05:14 PM
-    Author     : NUR HIDAYAH BINTI ISHAK 2020496204
+    Created on : Jul 16, 2023, 1:37:05 AM
+    Author     : LENOVO
 --%>
 
 <%@page import="bean.ItemBranchBean"%>
@@ -24,7 +24,7 @@
     <center> <body>
             <table border="0" style ="text-align:center" width = "100%">
 
-                <tr><td>HOME</td><td> | </td><td><a href="service.jsp">SERVICE</a></td><td> | </td><td><a href="about.jsp">ABOUT</a></td><td> | </td><td><a href="login.jsp">LOGIN</a></td>
+                <tr><td style="background-color:#F7DC6F">HOME</td><td> | </td><td><a href="service.jsp">SERVICE</a></td><td> | </td><td><a href="about.jsp">ABOUT</a></td><td> | </td><td><a href="login.jsp">LOGIN</a></td>
                 </tr>
 
                 <tr> <td colspan="7" style="text-align:center"><br><br><p>Welcome to ANC Express Tracking Parcel<br>
@@ -75,6 +75,11 @@
                 }
             }
         %>
+        
+        
+        <img src="WEB-INF/ANC-removebg-preview.png" width="100" height="100" alt="ANC-removebg-preview"/>
+
+        
     </body>
 </center>
 </html>

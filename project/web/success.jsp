@@ -1,6 +1,6 @@
 <%-- 
     Document   : success
-    Created on : Jul 17, 2023, 11:56:32 AM
+    Created on : Jul 16, 2023, 11:56:32 AM
     Author     : LENOVO
 --%>
 
@@ -19,13 +19,12 @@
     <center> <body>
             <table border="0" style ="text-align:center" width = "100%">
 
-                <tr><td>HOME</td><td> | </td><td><a href="service.jsp">SERVICE</a></td><td> | </td><td><a href="about.jsp">ABOUT</a></td><td> | </td><td> <a href="LogoutServlet">Logout</a></td>
+                <tr><td><a href="dashboard.jsp">HOME</a></td><td> | </td><td><a href="service.jsp">SERVICE</a></td><td> | </td><td><a href="about.jsp">ABOUT</a></td><td> | </td><td> <a href="LogoutServlet">Logout</a></td>
                 </tr>
             </table>
             <br>
             <br>
-            <p><%=request.getAttribute("username")%></p>
-        <p> <h1>You have done a good job today!</p>
+             <p> <h1>You have done a good job today!</p>
             <p>    What next?</h1> </p>
     </body>
     </center>

@@ -1,6 +1,6 @@
 <%-- 
     Document   : regbranch
-    Created on : Jul 17, 2023, 1:13:03 AM
+    Created on : Jul 16, 2023, 1:13:03 AM
     Author     : LENOVO
 --%>
 
@@ -22,8 +22,8 @@
 
         
             <center>
-            <h1>Add Branch</h1>
-            <form action="AddBranchServlet" method="POST">
+                <p style="background-color:#F7DC6F">  <h1>Add Branch</h1> </p>
+            <form action="checkbranch.jsp" method="POST">
                 <table>
                     <tr>
                         <td>Branch Location: </td>

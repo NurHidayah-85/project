@@ -41,9 +41,9 @@
                     int staffid = Integer.parseInt(request.getParameter("staffid"));
                 %>
 
-                <tr><th>Sender Information</th>
+                <tr><th style="background-color:#EAFAF1; padding: 10px">Sender Information</th>
                     <td></td>
-                    <th>Parcel Information</th>
+                    <th style="background-color:#ABEBC6; padding: 10px">Parcel Information</th>
                     <td></td></tr>
                 <tr>
                     <td><label for="senderName">Sender Name </label></td>
@@ -87,7 +87,7 @@
                     <td></td>
                     <td></td></tr>
                 <tr>
-                    <th>Receiver Information</th>
+                    <th style="background-color:#EAFAF1; padding: 10px">Receiver Information</th>
                     <td></td>
                     <td></td>
                     <td></td>

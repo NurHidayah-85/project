@@ -1,6 +1,6 @@
 <%-- 
     Document   : editvehicle
-    Created on : Jul 17, 2023, 4:45:29 AM
+    Created on : Jul 16, 2023, 1:37:05 AM
     Author     : LENOVO
 --%>
 
@@ -11,13 +11,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>edit vehicle</title>
+        <title>Edit vehicle</title>
     </head>
     <center>
         <body>
-            <h1>Add Vehicle</h1>
-            <form action="EditVehicleServlet" method="POST">
-                <input type="hidden" name="Vehicleid" value="<%= vehicle.getVehicleid() %>" />
+            <h1>Edit Vehicle</h1>
+            <form action="EditVehiclesServlet" method="POST">
+                <input type="hidden" name="vehicleid" value="<%= vehicle.getVehicleid() %>" />
                 <table>
                     <tr>
                         <td>Vehicle Type: </td>

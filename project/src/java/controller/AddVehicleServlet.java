@@ -40,7 +40,7 @@ public class AddVehicleServlet extends HttpServlet {
             VehicleBean addvehicleBean = new VehicleBean(vehicletype, noplate);
 
             if (RegisterVehicleDao.addvehicle(addvehicleBean)) {
-                request.getRequestDispatcher("/dashboard.jsp").forward(request, response);
+                request.getRequestDispatcher("/success.jsp").forward(request, response);
                 return;
             } else {
                 request.setAttribute("errMessage", "Insert unsuccessful!");

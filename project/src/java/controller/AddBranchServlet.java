@@ -69,7 +69,7 @@ public class AddBranchServlet extends HttpServlet {
             BranchBean addbranchBean = new BranchBean(location, poscode);
 
             if (BranchDao.addbranch(addbranchBean)) {
-                request.getRequestDispatcher("/dashboard.jsp").forward(request, response);
+                request.getRequestDispatcher("/success.jsp").forward(request, response);
                 return;
             } else {
                 request.setAttribute("errMessage", "Insert unsuccessful!");

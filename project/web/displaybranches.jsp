@@ -1,7 +1,7 @@
 <%-- 
     Document   : displaybrnaches
-    Created on : Jul 16, 2023, 10:02:12 PM
-    Author     : frei-
+    Created on : Jul 16, 2023, 1:37:05 AM
+    Author     : LENOVO
 --%>
 
 <%@page import="bean.BranchBean"%>
@@ -17,7 +17,7 @@
     <body>
         <table border="1" style ="text-align:center" width = "100%">
         <p> <h1>Branches List</h1></p>
-            <tr><th>Id</th><th>Location</th><th>Poscode</th><th>Actions</th></tr>
+            <tr><th style="background-color:#ABEBC6">Id</th><th style="background-color:#EAFAF1;">Location</th><th style="background-color:#ABEBC6">Poscode</th><th style="background-color:#EAFAF1;">Actions</th></tr>
 
             <% for (BranchBean branch : branches) {
             %>
@@ -28,11 +28,11 @@
                 <td>
                     <form action="DeleteBranchServlet" method="DELETE">
                         <input type="hidden" name="branchId" value="<%= branch.getBranchId() %>">
-                        <input type="submit" value="delete">
+                        <input type="submit" value="Delete">
                     </form>
                     <form action="EditBranchServlet" method="GET">
                         <input type="hidden" name="branchId" value="<%= branch.getBranchId() %>">
-                        <input type="submit" value="edit">
+                        <input type="submit" value="Edit">
                     </form>
                 </td>
             </tr>

@@ -38,7 +38,7 @@ public class AddParcelServlet extends HttpServlet {
             RegInformationBean reginfoBean = new RegInformationBean(custsname, custsphone, custsadd, custsposcode, custsemail, custrname, custrphone, custradd, custrposcode, custremail, weight, height, fee, shiptype, staffid);
 
             if (RegParcelDao.reginfo(reginfoBean)) {
-                request.getRequestDispatcher("/dashboard.jsp").forward(request, response);
+                request.getRequestDispatcher("/success.jsp").forward(request, response);
                 return;
             } else {
                 request.setAttribute("errMessage", "Insert unsuccessful!");

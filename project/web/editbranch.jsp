@@ -1,8 +1,9 @@
 <%-- 
     Document   : editbranch
-    Created on : Jul 16, 2023, 9:43:57 PM
-    Author     : frei-
+    Created on : Jul 16, 2023, 1:37:05 AM
+    Author     : LENOVO
 --%>
+
 
 <%@page import="bean.BranchBean"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -15,7 +16,7 @@
     </head>
     <center>
         <body>
-            <h1>Add Branch</h1>
+            <h1>Edit Branch</h1>
             <form action="EditBranchServlet" method="POST">
                 <input type="hidden" name="branchId" value="<%= branch.getBranchId() %>" />
                 <table>
